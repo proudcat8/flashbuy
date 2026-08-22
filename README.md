@@ -1,14 +1,22 @@
-# Web Development Project
+# E-Commerce Project
 
-A clean, responsive web project built using core web technologies.
+A responsive online store built using core web technologies.
+
+---
+
+## Featured Products
+
+* Product 1: ₹1,499
+* Product 2: ₹2,999
+* Product 3: ₹4,999
 
 ---
 
 ## Technologies Used
 
-* HTML5: Structure and markup
-* CSS3: Styling and layout design
-* JavaScript (ES6+): Interactive logic and dynamic functionality
+* HTML5: Structure and product markup
+* CSS3: Styling, layout, and price tags
+* JavaScript (ES6+): Cart logic and dynamic price updates
 
 ---
 
@@ -40,5 +48,5 @@ Open the index.html file in your browser:
 ├── css/
 │   └── styles.css    # Main stylesheet
 ├── js/
-│   └── main.js       # Core JavaScript functionality
+│   └── main.js       # Dynamic pricing and cart logic
 └── README.md         # Project documentation
