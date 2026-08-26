@@ -23,14 +23,11 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-orange-500 selection:text-white">
 
-  <!-- Toast Container -->
   <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-  <!-- Navigation Bar -->
   <header class="sticky top-0 z-40 glass-nav border-b border-slate-800/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
       
-      <!-- Brand Logo -->
       <div class="flex items-center gap-2 cursor-pointer group" id="logo-btn">
         <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
           <i data-lucide="zap" class="w-6 h-6 text-slate-950 fill-slate-950"></i>
@@ -38,38 +35,32 @@
         <span class="text-2xl font-black tracking-tight bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent">FlashBuy</span>
       </div>
 
-      <!-- Live Search Bar -->
       <div class="flex-1 max-w-md hidden md:block relative">
         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
         <input type="text" id="search-input" placeholder="Search tech, fashion, home..." class="w-full bg-slate-900/90 border border-slate-700/60 rounded-full pl-10 pr-4 py-2 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all">
       </div>
 
-      <!-- Action Buttons -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <!-- Donate Button -->
+        
         <button id="donate-btn" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-bold transition-all active:scale-95">
           <i data-lucide="heart-handshake" class="w-4 h-4 text-emerald-400"></i>
           <span>Donate</span>
         </button>
 
-        <!-- Wishlist Button -->
         <button id="wishlist-btn" class="relative p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-red-400 transition-all active:scale-95">
           <i data-lucide="heart" class="w-5 h-5"></i>
           <span id="wishlist-count" class="absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center opacity-0 transition-opacity">0</span>
         </button>
 
-        <!-- Cart Button -->
         <button id="cart-btn" class="relative p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-orange-400 transition-all active:scale-95">
           <i data-lucide="shopping-bag" class="w-5 h-5"></i>
           <span id="cart-count" class="absolute -top-1.5 -right-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[10px] font-bold rounded-full h-5 w-5 flex items-center justify-center animate-bounce">0</span>
         </button>
 
-        <!-- Auth Account Action -->
         <div id="auth-actions"></div>
       </div>
     </div>
 
-    <!-- Mobile Search Bar -->
     <div class="px-4 pb-3 md:hidden">
       <div class="relative">
         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
@@ -78,7 +69,6 @@
     </div>
   </header>
 
-  <!-- Hero Banner -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 my-6 w-full">
     <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-800/80 p-8 md:p-12 shadow-2xl">
       <div class="absolute -right-20 -top-20 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -92,7 +82,6 @@
     </div>
   </section>
 
-  <!-- Category & Sorting Controls Bar -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 mb-6 w-full">
     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-900/50 p-3 rounded-2xl border border-slate-800/60">
       <div id="category-buttons" class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 scrollbar-none"></div>
@@ -109,7 +98,6 @@
     </div>
   </section>
 
-  <!-- Product Catalog Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 mb-16 flex-1 w-full">
     <div class="flex items-center justify-between mb-6">
       <h2 id="category-title" class="text-xl font-bold flex items-center gap-2 text-slate-100">
@@ -121,7 +109,6 @@
     <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
   </main>
 
-  <!-- Donate Modal -->
   <div id="donate-modal" class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center p-4">
     <div id="donate-backdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-md"></div>
     <div class="relative w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl z-10 transition-transform duration-300 scale-95" id="donate-card">
@@ -135,14 +122,12 @@
         <p class="text-xs text-slate-400 mt-1">Choose an amount to help keep this project free and open source.</p>
       </div>
 
-      <!-- Quick Preset Buttons -->
       <div class="grid grid-cols-3 gap-3 mb-4">
         <button data-amount="10" class="donate-option-btn p-3 rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500 text-slate-200 font-bold text-sm transition-all text-center focus:border-emerald-500 focus:bg-emerald-500/10">₹10</button>
         <button data-amount="20" class="donate-option-btn p-3 rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500 text-slate-200 font-bold text-sm transition-all text-center focus:border-emerald-500 focus:bg-emerald-500/10">₹20</button>
         <button data-amount="30" class="donate-option-btn p-3 rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500 text-slate-200 font-bold text-sm transition-all text-center focus:border-emerald-500 focus:bg-emerald-500/10">₹30</button>
       </div>
 
-      <!-- Custom Amount Input -->
       <div class="mb-6">
         <label class="block text-xs font-semibold text-slate-400 mb-1.5">Or enter custom amount (₹)</label>
         <div class="relative">
@@ -157,7 +142,6 @@
     </div>
   </div>
 
-  <!-- Auth Modal -->
   <div id="auth-modal" class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center p-4">
     <div id="auth-backdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-md"></div>
     <div class="relative w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl z-10 transition-transform duration-300 scale-95" id="auth-card">
@@ -166,7 +150,6 @@
     </div>
   </div>
 
-  <!-- Cart Drawer -->
   <div id="cart-drawer" class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-all duration-300">
     <div id="cart-backdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"></div>
     <div id="cart-content" class="fixed right-0 top-0 bottom-0 w-full max-w-md bg-slate-900 p-6 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col border-l border-slate-800 z-10">
@@ -191,7 +174,6 @@
     </div>
   </div>
 
-  <!-- Standard Sequential Scripts -->
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
