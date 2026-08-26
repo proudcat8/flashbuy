@@ -27,10 +27,10 @@ You only need a modern web browser (such as Chrome, Firefox, Safari, or Edge).
 
 ### Installation
 1. Clone the repository to your local machine:
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/proudcat8/flashbuy.git
 
 2. Navigate into the project folder:
-   cd your-repo-name
+   cd flashbuy
 
 ---
 
@@ -41,12 +41,3 @@ Open the index.html file in your browser:
 * Use a local dev server (like VS Code's Live Server extension) for instant live reloads.
 
 ---
-
-## Project Structure
-
-├── index.html        # Main HTML layout
-├── css/
-│   └── styles.css    # Main stylesheet
-├── js/
-│   └── main.js       # Dynamic pricing and cart logic
-└── README.md         # Project documentation
