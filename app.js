@@ -250,7 +250,6 @@ function toggleCart(forceOpen = false) {
   }
 }
 
-// Donation Modal Functions
 function openDonateModal() {
   state.selectedDonation = null;
   document.getElementById('custom-donate-input').value = "";
@@ -431,7 +430,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('auth-backdrop').addEventListener('click', closeAuthModal);
   document.getElementById('checkout-btn').addEventListener('click', checkout);
 
-  // Donate Modal Event Handlers
   document.getElementById('donate-btn').addEventListener('click', openDonateModal);
   document.getElementById('close-donate-btn').addEventListener('click', closeDonateModal);
   document.getElementById('donate-backdrop').addEventListener('click', closeDonateModal);
