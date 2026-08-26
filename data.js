@@ -1,7 +1,6 @@
 const categories = ["All", "Electronics", "Fashion", "Home", "Fitness", "Accessories"];
 
 const products = [
-  // Electronics
   {
     id: 1,
     name: "Wireless ANC Headphones",
@@ -57,7 +56,6 @@ const products = [
     image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80"
   },
 
-  // Fashion
   {
     id: 7,
     name: "Minimalist Leather Backpack",
@@ -104,7 +102,6 @@ const products = [
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80"
   },
 
-  // Home
   {
     id: 12,
     name: "Smart Ambient LED Lamp",
@@ -151,7 +148,6 @@ const products = [
     image: "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=600&q=80"
   },
 
-  // Fitness
   {
     id: 17,
     name: "Insulated Thermal Water Flask",
@@ -189,7 +185,6 @@ const products = [
     image: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=600&q=80"
   },
 
-  // Accessories
   {
     id: 21,
     name: "Full-Grain Leather Bifold Wallet",
